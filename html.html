@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <!DOCTYPE html>
+    <html lang="ar" dir="rtl">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+      <title>استكشاف الجغرافيا</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+
+    </head>
+    
+<body style="background-color: #f9f9f9; font-family: 'Cairo', 'Arial', sans-serif;">
+      
+  <!-- رأس الصفحة -->
+<div id="header" class="text-center p-4 text-white" style="background-color: #fab7aa; border-bottom: 6px solid #a0522d;">
+    <h1 style="font-size: 60px; color: #ffffff;">علم الجغرافيا</h1>
+    <p style="font-size: 20px; color: #fefefe;">استكشاف الأرض والإنسان والطبيعة</p>
+  </div>
+
+  <div id="color-buttons">
+    <button class="btn btn-sm btn-outline-success rounded-circle mb-2" onclick="changeBg()" title="تغيير الخلفية">
+      🎨
+    </button>
+    <button class="btn btn-sm btn-outline-danger rounded-circle" onclick="resetBg()" title="إعادة الخلفية">
+      ♻️
+    </button>
+  </div>
+  
+  <!-- محتوى المقدمة -->
+  <div class="container my-4 p-4 rounded shadow" style="background-color: #fff8f6; border: 2px solid #fab7aa;" dir="rtl">
+    <h4 class="text-center fw-bold mb-4" style="color: #386641;">أهمية الجغرافيا</h4>
+  
+    <p class="text-end" style="line-height: 1.9; color: #4b4b4b;">
+      تُعد <b style="color: #a0522d;">الجغرافيا</b> من العلوم الأساسية التي تُعنى بفهم الأرض بكل مظاهرها، سواء كانت طبيعية كالجبال والأنهار، 
+      أو بشرية كالسكان والمدن. إن فهمنا للعالم من حولنا يبدأ من إدراك كيف تؤثر البيئة على الإنسان، 
+      وكيف يُسهم الإنسان بدوره في تشكيل المكان من حوله.
+    </p>
+  
+    <p class="text-end" style="line-height: 1.9; color: #4b4b4b;">
+      تنقسم الجغرافيا إلى فرعين رئيسيين: 
+      <b style="color: #219ebc;">الجغرافيا الطبيعية</b> التي تهتم بدراسة الظواهر البيئية كالجبال، المناخ، والمسطحات المائية، و
+      <b style="color: #88c057;">الجغرافيا البشرية</b> التي تُركّز على الأنشطة الإنسانية كالنمو السكاني، الزراعة، والتخطيط الحضري.
+      ومن خلال الربط بين هذين الفرعين، نتمكن من فهم أعمق للعلاقة بين الإنسان والبيئة.
+    </p>
+  
+    <p class="text-end" style="line-height: 1.9; color: #4b4b4b;">
+      يلعب هذا العلم دورًا حيويًا في مواجهة تحديات العصر مثل التغير المناخي، وإدارة الموارد الطبيعية، والتنمية المستدامة. 
+      كما يُستخدم في مجالات التخطيط العمراني، الخرائط، السياحة، وحتى في الأمن الجغرافي والسياسي.
+    </p>
+  
+    <details class="mb-4" style="background-color: #fdf1ef; border: 1px solid #fab7aa; border-radius: 8px; padding: 10px;">
+      <summary style="cursor: pointer; color: #386641; font-weight: bold;">ماذا تعني الجغرافيا؟</summary>
+      <p class="mt-2 text-end" style="color: #555;">
+        كلمة "جغرافيا" مشتقة من اللغة اليونانية القديمة، وتتكون من مقطعين: "جيو" وتعني الأرض، و"غرافيا" وتعني الكتابة أو الوصف. 
+        أي أن الجغرافيا هي "وصف الأرض"، وهذا يشمل دراسة كل ما يتعلق بموقع الأرض، مكوناتها، وتأثير الإنسان فيها.
+      </p>
+    </details>
+  </div>
+  
+  
+    <!-- Cards-->
+    <div class="row text-center">
+        <div class="col-md-6 mb-3">
+            <div class="card h-100">
+              <img src="pic.jpg" class="card-img-top" alt="مقارنة بين الجغرافيا البشرية والطبيعية">
+              <div class="card-body text-end">
+                <h5 class="card-title">🗺️ صورة تعليمية: الجغرافيا الطبيعية والبشرية</h5>
+                
+                <p class="card-text" style="line-height: 1.8;">
+                  تُعد هذه الصورة من الوسائل التعليمية البصرية التي تسهم في تعزيز فهم الطلاب لمفاهيم الجغرافيا من خلال المقارنة المباشرة بين العالم الطبيعي والبيئة البشرية. 
+                  فهي تجسد العلاقة بين الإنسان والطبيعة بشكل فني وتفاعلي، مما يجعلها أداة فعالة في التعليم داخل الصف أو في الموارد الرقمية.
+                  تمنح هذه الصورة المتعلم فرصة لفهم النظريات الجغرافية عبر التمثيل الواقعي، وتحفّز على التفكير النقدي والاستنتاج.
+                </p>
+          
+                <ul class="card-text list-unstyled pe-3" dir="rtl">
+                  <li>🌄 توضح الصورة الفرق البصري بين البيئة الطبيعية والمناطق الحضرية.</li>
+                  <li>🔁 تُستخدم كوسيلة تعليمية لتحفيز النقاشات الصفية حول العلاقة بين الإنسان والبيئة.</li>
+                  <li>🎨 تجمع بين الجمال الفني والدقة الأكاديمية.</li>
+                  <li>📚 مفيدة في دروس الجغرافيا، والعروض التقديمية، والأنشطة التفاعلية.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+      <div class="col-md-6 mb-3">
+        <div class="card h-100">
+          <img src="pic2.png" class="card-img-top" alt="صورة">
+          <div class="card-body text-end">
+            <h5 class="card-title">
+              <a href="https://www.youtube.com/watch?v=NYi4-atpdTI" target="_blank" class="text-decoration-none text-primary">
+                🎥 فيديو توضيحي: الجغرافيا الطبيعية والبشرية
+              </a>
+            </h5>
+            <ul class="card-text list-unstyled pe-3" dir="rtl">
+              <li>🌍 تعريف شامل لكل من الجغرافيا الطبيعية والبشرية.</li>
+              <li>🔄 مقارنة بصرية بين العوامل الطبيعية والأنشطة البشرية.</li>
+              <li>📌 أمثلة من الواقع: كالعلاقة بين الزراعة والمناخ، أو بين المدن ومصادر المياه.</li>
+              <li>🎯 مناسب للطلاب والمعلمين لفهم أساسيات الجغرافيا بشكل ممتع.</li>
+            </ul>
+          </div>
+        </div>
+      </div>           
+    </div>
+
+    <!-- الجدول-->
+    <h4 class="mt-5 text-center fw-bold" style="color: #386641;">📚 بعض مجالات الجغرافيا</h4>
+    <table class="table text-center mt-3 shadow-sm" style="border: 2px solid #fab7aa; direction: rtl;">
+    <thead style="background-color: #fab7aa; color: #fff;">
+        <tr>
+        <th style="font-weight: bold;">مجالات الجغرافيا</th>
+        <th style="font-weight: bold;">خطوات الدراسة</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="background-color: #fef3f1;">
+        <td style="color: #219ebc;">الجغرافيا الطبيعية</td>
+        <td style="color: #386641;">ملاحظة الظواهر الطبيعية</td>
+        </tr>
+        <tr style="background-color: #fdf1ef;">
+        <td style="color: #88c057;">الجغرافيا البشرية</td>
+        <td style="color: #a0522d;">تحليل البيانات</td>
+        </tr>
+        <tr style="background-color: #fef3f1;">
+        <td style="color: #a0522d;">الجغرافيا الاقتصادية</td>
+        <td style="color: #007b83;">رسم الخرائط</td>
+        </tr>
+    </tbody>
+    </table>
+
+
+    <div class="alert text-center fw-bold mb-4" role="alert"
+     style="background-color: #fde5de; color: #a0522d; border: 2px dashed #fab7aa;">
+  🌍 الجغرافيا تجمع بين الطبيعة والبشرية لفهم عالمنا بشكل أفضل.
+    </div>
+
+    <!-- زر للانتقال -->
+    <div class="text-center">
+    <a href="https://lookinmena.com" target="_blank"
+        class="btn mb-4 px-4 py-2 fw-bold"
+        style="background-color: #fab7aa; color: white; border: none; border-radius: 30px;">
+        📖 للمزيد من المعلومات عن الجغرافيا
+    </a>
+    </div>
+
+    <!-- نموذج الإدخال -->
+    <form method="post" dir="rtl">
+        <!-- اختيار المجال -->
+        <fieldset class="p-4 mb-4 rounded" style="border: 2px solid #fab7aa; background-color: #fff5f3;">
+          <legend class="float-none w-auto px-3 fs-4 fw-bold" style="color: #a0522d;">🌍 ما هي أفضل مجالات الدراسة؟</legend>
+      
+          <div class="mb-3 text-end">
+            <input type="radio" name="group1" id="geo_natural" class="form-check-input me-2">
+            <label for="geo_natural" class="form-check-label">الجغرافيا الطبيعية</label><br>
+            <input type="radio" name="group1" id="geo_human" class="form-check-input me-2">
+            <label for="geo_human" class="form-check-label">الجغرافيا البشرية</label>
+          </div>
+      
+          <!-- تفاصيل أنواع الجغرافيا -->
+          <fieldset class="p-3 rounded mb-3" style="border: 1px solid #88c057; background-color: #f6fff1;">
+            <legend class="float-none w-auto px-2 fs-5 fw-semibold text-success">تفاصيل أنواع الجغرافيا</legend>
+      
+            <h5 class="fw-bold text-success">أنواع الجغرافيا الطبيعية</h5>
+            <div class="form-check"><input type="checkbox" id="terrain" class="form-check-input"><label for="terrain" class="form-check-label">جغرافيا التضاريس (الجيومورفولوجيا)</label></div>
+            <div class="form-check"><input type="checkbox" id="climate" class="form-check-input"><label for="climate" class="form-check-label">الجغرافيا المناخية</label></div>
+            <div class="form-check"><input type="checkbox" id="hydro" class="form-check-input"><label for="hydro" class="form-check-label">الجغرافيا الهيدرولوجية</label></div>
+            <div class="form-check"><input type="checkbox" id="bio" class="form-check-input"><label for="bio" class="form-check-label">الجغرافيا الحيوية</label></div>
+            <div class="form-check"><input type="checkbox" id="soil" class="form-check-input"><label for="soil" class="form-check-label">جغرافيا التربة (البيدولوجيا)</label></div>
+            <div class="form-check mb-3"><input type="checkbox" id="astronomy" class="form-check-input"><label for="astronomy" class="form-check-label">الجغرافيا الفلكية</label></div>
+      
+            <h5 class="fw-bold text-primary">أنواع الجغرافيا البشرية</h5>
+            <div class="form-check"><input type="checkbox" id="population" class="form-check-input"><label for="population" class="form-check-label">جغرافيا السكان</label></div>
+            <div class="form-check"><input type="checkbox" id="economic" class="form-check-input"><label for="economic" class="form-check-label">الجغرافيا الاقتصادية</label></div>
+            <div class="form-check"><input type="checkbox" id="political" class="form-check-input"><label for="political" class="form-check-label">الجغرافيا السياسية</label></div>
+            <div class="form-check"><input type="checkbox" id="urban" class="form-check-input"><label for="urban" class="form-check-label">الجغرافيا العمرانية</label></div>
+            <div class="form-check"><input type="checkbox" id="cultural" class="form-check-input"><label for="cultural" class="form-check-label">الجغرافيا الثقافية</label></div>
+            <div class="form-check"><input type="checkbox" id="social" class="form-check-input"><label for="social" class="form-check-label">الجغرافيا الاجتماعية</label></div>
+          </fieldset>
+      
+          <div class="mt-3 text-center">
+            <a class="btn fw-bold" style="background-color: #fab7aa; color: white;" href="https://www.bing.com/" target="_blank">
+              🔍 معرفة المزيد عن أنواع الجغرافيا
+            </a>
+          </div>
+        </fieldset>
+      
+        <!-- نموذج إدخال معلومات المستخدم -->
+        <fieldset class="p-4 mb-4 rounded" style="border: 2px solid #fab7aa; background-color: #fff8f6;">
+          <legend class="float-none w-auto px-3 fs-4 fw-bold" style="color: #a0522d;">📝 اكتب معلوماتك:</legend>
+      
+          <div class="mb-3">
+            <label for="name" class="form-label fw-bold">اكتب اسمك</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+          </div>
+      
+          <div class="mb-3">
+            <label for="age" class="form-label fw-bold">اكتب عمرك</label>
+            <input type="number" id="age" name="age" class="form-control">
+          </div>
+      
+          <div class="mb-3">
+            <label for="major" class="form-label fw-bold">اختر تخصصك</label>
+            <select name="major" id="major" class="form-select" required>
+              <option value="">-- اختر تخصصاً --</option>
+              <option value="1">الجغرافيا البيئية</option>
+              <option value="2">الجغرافيا الاقتصادية</option>
+              <option value="3">الجغرافيا السياسية</option>
+              <option value="4">الجغرافيا السياحية</option>
+              <option value="5">الجغرافيا الزراعية</option>
+              <option value="6">الاستشعار عن بعد</option>
+            </select>
+          </div>
+      
+          <div class="mb-3">
+            <label for="nots" class="form-label fw-bold">تحدث باختصار عن تخصصك</label>
+            <textarea id="nots" cols="30" rows="5" class="form-control"></textarea>
+          </div>
+        </fieldset>
+      
+        <div class="text-center">
+          <input type="submit" value="إرسال" class="btn me-2" style="background-color: #fab7aa; color: white; font-weight: bold;">
+          <input type="reset" value="حذف" class="btn" style="background-color: #dc3545; color: white; font-weight: bold;">
+        </div>
+      </form>
+
+  </div>
+  
+  <script>
+  function changeBg() {
+    document.body.style.backgroundColor = "#d2e9d1";
+  }
+
+  function resetBg() {
+    document.body.style.backgroundColor = "#f9f9f9";
+  }
+</script>
+
+  
+
+  <script>
+    window.onload = function () {
+      alert("مرحبًا بك في صفحة استكشاف الجغرافيا!");
+    };
+  </script>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function (e) {
+      if (!confirm("هل أنت متأكد من أنك تريد إرسال النموذج؟")) {
+        e.preventDefault(); // يمنع الإرسال إذا لم يتم التأكيد
+      }
+    });
+  </script>
+  
+</body>
+</html>
