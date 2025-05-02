@@ -1,0 +1,181 @@
+
+:root {
+    --main-color: #fab7aa;
+    --accent-color: #a0522d;
+    --green-light: #d2e9d1;
+    --green-dark: #386641;
+    --bg-light: #fff8f6;
+    --font-main: 'Cairo', 'Arial', sans-serif;
+  }
+  
+  /* إعدادات عامة */
+  body {
+    background-color: #f9f9f9;
+    font-family: var(--font-main);
+  }
+  
+  /* رأس الصفحة */
+  #header {
+    background-color: var(--main-color);
+    padding: 20px;
+    border-bottom: 6px solid var(--accent-color);
+    text-align: center;
+    color: white;
+  }
+  
+  #header h1 {
+    font-size: 60px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  #header p {
+    font-size: 20px;
+    color: #fefefe;
+  }
+  
+  /* العناوين */
+  h4, h5 {
+    font-weight: bold;
+  }
+  
+  h4 {
+    color: var(--green-dark);
+  }
+  
+  h5 {
+    color: #219ebc;
+  }
+  
+  /* الجداول */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    direction: rtl;
+  }
+  
+  th, td {
+    border: 2px solid #000;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  thead {
+    background-color: var(--main-color);
+    color: white;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #fefefe;
+  }
+  
+  /* البطاقات */
+  .card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  /* نموذج الإدخال */
+  fieldset {
+    border: 2px solid var(--main-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-color: var(--bg-light);
+  }
+  
+  legend {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    padding: 0 10px;
+    text-align: center;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  input[type="submit"], input[type="reset"] {
+    padding: 10px 30px;
+    border: none;
+    font-weight: bold;
+  }
+  
+  input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+  }
+  
+  input[type="reset"] {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #e09689;
+  }
+  
+  input[type="reset"]:hover {
+    background-color: #c82333;
+  }
+  
+  /* تنسيق الأزرار العائمة */
+  #color-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #color-buttons button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 1;
+    padding: 0;
+  }
+  
+  /* مربعات الاختيار */
+  .form-check {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .form-check-input {
+    float: right;
+    margin-left: 10px;
+  }
+  
+  /* روابط */
+  a.btn, .more-link {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* تنبيهات */
+  .alert {
+    font-weight: bold;
+    text-align: center;
+    background-color: #fde5de;
+    color: var(--accent-color);
+    border: 2px dashed var(--main-color);
+  }
+      
